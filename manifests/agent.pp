@@ -10,9 +10,9 @@ class mcafee::agent (
                       $service_enable        = true,
                     ) inherits mcafee::params{
 
-  class { '::mcafee::agent::install': } ->
-  class { '::mcafee::agent::config': } ~>
-  class { '::mcafee::agent::service': } ->
-  Class['::mcafee::agent']
+  class { 'mcafee::agent::install': } ->
+  class { 'mcafee::agent::config': } ~>
+  class { 'mcafee::agent::service': } ->
+  Class['mcafee::agent']
 
 }
