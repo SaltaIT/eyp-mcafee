@@ -15,7 +15,10 @@ class mcafee::agent::service inherits mcafee::agent {
   {
     if($mcafee::agent::manage_service)
     {
-      #service or exec here
+      service { 'ma':
+        ensure => $mcafee::agent::service_ensure,
+        enable => $mcafee::agent::service_enable,
+      }
     }
   }
 }
