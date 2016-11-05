@@ -63,7 +63,7 @@ class mcafee::agent::install inherits mcafee::agent {
 
       exec { 'mcafee::agent install':
         command => "/bin/bash ${mcafee::agent::srcdir}/mcafee-agent.sh -i",
-        cwd     => ${mcafee::agent::srcdir},
+        cwd     => $mcafee::agent::srcdir,
         creates => '/var/McAfee/agent',
         require => Exec[ [
                           'which wget eyp-mcafee::agent',
