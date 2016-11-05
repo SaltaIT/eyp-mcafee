@@ -9,11 +9,11 @@ class mcafee::agent::install inherits mcafee::agent {
   {
     if($mcafee::agent::package_source==undef)
     {
-      fail('undefined package url, nothing to install')
+      fail('undefined package source file (package_source), nothing to install')
     }
     else
     {
-      exec { 'mkdir p ${mcafee::agent::srcdir}':
+      exec { "mkdir p ${mcafee::agent::srcdir}":
         command => "mkdir -p ${mcafee::agent::srcdir}",
         creates => $mcafee::agent::srcdir,
       }
@@ -27,7 +27,7 @@ class mcafee::agent::install inherits mcafee::agent {
         }
 
         exec { 'wget mcafee package':
-          command => "wget ${mcafee::agent::package_source} -O ${mcafee::agent::srcdir}/mcafee-agent.sh",
+          command => "wget --no-check-certificate ${mcafee::agent::package_source} -O ${mcafee::agent::srcdir}/mcafee-agent.sh",
           creates => "${mcafee::agent::srcdir}/mcafee-agent.sh",
           require => Exec['which wget eyp-mcafee::agent'],
         }
