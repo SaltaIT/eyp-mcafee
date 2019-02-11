@@ -1,4 +1,5 @@
 class mcafee::ensltp::install inherits mcafee::ensltp {
+  
   # # unpack McAfee ENSLTP
   # tar zxvf ISecTP-10.5.3-1650-Release-standalone.tar.gz
   #
