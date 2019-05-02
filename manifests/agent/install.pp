@@ -1,4 +1,3 @@
-#
 class mcafee::agent::install inherits mcafee::agent {
 
   Exec {

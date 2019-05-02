@@ -1,5 +1,4 @@
 class mcafee::ensltp::config inherits mcafee::ensltp {
-
   # # ex add On-Demand Scan Task  ex: ./isecav --addodstask --name [task name] [additional options]
   # /opt/isec/ens/threatprevention/bin/isecav --addodstask --name "daily-scan" --scanarchive enable --scanlocaldrives enable --scannetworkdrives disable --scansubfolders enable --scanpaths /apps/something-data/data/attachments
   #
@@ -51,5 +50,4 @@ class mcafee::ensltp::config inherits mcafee::ensltp {
   # Maximum scan time                    :  45
   # GTI Status                           :  enable
   # GTI Sensitivity Level                :  Very High
-
 }
