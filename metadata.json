@@ -5,7 +5,7 @@
   "summary": "mcafee agent",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-mcafee",
-  "project_page": null,
+  "project_page": "https://github.com/NTTCom-MS/eyp-mcafee",
   "issues_url": "https://github.com/NTTCom-MS/eyp-mcafee/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
