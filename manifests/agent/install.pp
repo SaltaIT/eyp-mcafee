@@ -34,7 +34,7 @@ class mcafee::agent::install inherits mcafee::agent {
       }
       else
       {
-        file { "${srcdir}/mcafee-agent.sh":
+        file { "${mcafee::agent::srcdir}/mcafee-agent.sh":
           ensure  => 'present',
           owner   => 'root',
           group   => 'root',
