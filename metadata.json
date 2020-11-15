@@ -1,15 +1,15 @@
 {
   "name": "eyp-mcafee",
-  "version": "0.1.4",
-  "author": "eyp",
+  "version": "1.0.4",
+  "author": "Jordi Prats",
   "summary": "mcafee agent",
   "license": "Apache-2.0",
-  "source": "https://github.com/NTTCom-MS/eyp-mcafee",
-  "project_page": "https://github.com/NTTCom-MS/eyp-mcafee",
-  "issues_url": "https://github.com/NTTCom-MS/eyp-mcafee/issues",
+  "source": "https://github.com/SaltaIT/eyp-mcafee",
+  "project_page": "https://github.com/SaltaIT/eyp-mcafee",
+  "issues_url": "https://github.com/SaltaIT/eyp-mcafee/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
-    {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/eyplib","version_requirement":">= 1.0.0 < 2.0.0"},
     {"name":"eyp/systemd","version_requirement":">= 0.1.12 < 0.4.0"}
   ],
   "operatingsystem_support": [
@@ -41,7 +41,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 3.8.0"
+      "version_requirement": ">= 4.0.0"
     }
   ]
 }
